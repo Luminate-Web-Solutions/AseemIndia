@@ -1,0 +1,130 @@
+.about-container {
+    font-family: Arial, sans-serif;
+    padding: 50px 15px;
+    background-color: #f8f9fa;
+  }
+  
+  .about-header {
+    margin-bottom: 30px;
+  }
+  
+  .about-header h2 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .about-header p {
+    max-width: 600px;
+    margin: 0 auto 20px;
+    font-size: 1.1rem;
+  }
+  
+  .about-video {
+    margin: 40px 0;
+  }
+  
+  .video-wrapper {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .video-wrapper img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    border-radius: 50%;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  
+  .about-content {
+    text-align: center;
+    margin: 40px 0;
+  }
+  
+  .about-logo {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+  
+  .stats {
+    text-align: center;
+    background: white;
+    padding: 40px;
+  }
+  
+  .stats h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  .stats-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .stat {
+    background: #e3e3e3;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+  }
+  
+  .stat h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .challenges {
+    padding: 50px;
+  }
+  
+  .challenges h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+  }
+  
+  .challenges-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .challenge {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .what-we-do {
+    margin-top: 40px;
+  }
+  
+  .what-we-do h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  .what-we-do p {
+    max-width: 600px;
+    margin: 0 auto 20px;
+    font-size: 1.1rem;
+  }
+  
