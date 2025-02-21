@@ -16,6 +16,8 @@ import { ReportsComponent } from './reports/reports.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { CasestudiesComponent } from './casestudies/casestudies.component';
 import { DonateComponent } from './donate/donate.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { DonateComponent } from './donate/donate.component';
     ReportsComponent,
     GalleryComponent,
     CasestudiesComponent,
-    DonateComponent
+    DonateComponent,
+    NavbarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
