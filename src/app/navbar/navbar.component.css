@@ -16,6 +16,8 @@
   .logo img {
     max-height: auto;
     max-width: 160px;
+    align-self: left;
+    margin-left: -60vh;
   }
   
   .nav-items {
@@ -83,3 +85,21 @@
       display: none;
     }
   }
+
+  .whatsapp-nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.whatsapp-nav img {
+    width: 30px; /* Adjust the size */
+    height: 30px;
+    transition: transform 0.2s ease-in-out;
+    margin-right: -110vh;
+}
+
+.whatsapp-nav img:hover {
+    transform: scale(1.1);
+}
