@@ -1,7 +1,8 @@
 /* Hero Section */
 .hero {
     position: relative;
-    height: 100vh;
+    height: 75vh;
+    width: auto;
     min-height: 600px;
     color: white;
     overflow: hidden;
