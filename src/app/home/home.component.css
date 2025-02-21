@@ -33,10 +33,6 @@
     z-index: 3;
     padding-top: 150px;
   }
-
-  .text-center {
-    text-align: center;
-  }
   
   /* Card Styles */
   .focus-card,
@@ -115,13 +111,13 @@
   .partner-logo {
     height: 60px;
     object-fit: contain;
-    filter: grayscale(100%);
-    transition: filter 0.3s ease;
+    /* filter: grayscale(100%); */
+    /* transition: filter 0.3s ease; */
   }
   
-  .partner-logo:hover {
+  /* .partner-logo:hover {
     filter: grayscale(0%);
-  }
+  } */
   
   /* Bank Details */
   .bank-details {
