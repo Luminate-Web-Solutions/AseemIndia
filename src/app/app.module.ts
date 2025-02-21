@@ -35,13 +35,14 @@ import { FooterComponent } from './footer/footer.component';
     GalleryComponent,
     CasestudiesComponent,
     DonateComponent,
-    NavbarComponent,
+    
     FooterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
-  ],
+    AppRoutingModule,
+    NavbarComponent
+],
   providers: [],
   bootstrap: [AppComponent]
 })
