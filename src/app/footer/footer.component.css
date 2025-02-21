@@ -3,6 +3,7 @@
     color: white;
     padding: 20px 0;
     font-family: Arial, sans-serif;
+    height: 400px;
   }
   
   .footer-container {
@@ -11,6 +12,7 @@
     align-items: start;
     flex-wrap: wrap;
     max-width: 1200px;
+    max-height: 700px;
     margin: 0 auto;
   }
   
