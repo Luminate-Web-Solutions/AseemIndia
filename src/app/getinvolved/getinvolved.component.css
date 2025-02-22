@@ -1,0 +1,132 @@
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 400px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/aseem-banner-2.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  
+  .hero h1 {
+    position: relative;
+    z-index: 1;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+  
+  /* Get Involved Section */
+  .get-involved-section {
+    background-color: #f8f9fa;
+  }
+  
+  .involvement-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    transition: transform 0.3s ease;
+  }
+  
+  .involvement-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-icon {
+    width: 80px;
+    height: 80px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+  }
+  
+  .card-icon i {
+    font-size: 2rem;
+    color: white;
+  }
+  
+  .involvement-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--primary-color);
+  }
+  
+  .involvement-card p {
+    color: #666;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  
+  /* Contact Info */
+  .contact-info {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-info a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .contact-info a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero {
+      height: 300px;
+    }
+  
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .involvement-card {
+      margin-bottom: 2rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .hero {
+      height: 250px;
+    }
+  
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .card-icon {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .card-icon i {
+      font-size: 1.5rem;
+    }
+  }
