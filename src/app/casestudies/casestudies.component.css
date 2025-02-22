@@ -1,0 +1,116 @@
+.container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/aseem-banner-2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-title {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+  }
+  
+  .content {
+    padding: 2rem;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 3rem;
+  }
+  
+  .testimonials {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .testimonial-card {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 80%;
+    align-self: center;
+  }
+  
+  .testimonial-content {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .testimonial-quote {
+    flex: 0 0 200px;
+    text-align: center;
+  }
+  
+  .quote-image {
+    margin-bottom: 1rem;
+  }
+  
+  .quote-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  
+  .quote-text {
+    font-style: italic;
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  
+  .testimonial-quote h3 {
+    color: #333;
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
+  .testimonial-text {
+    flex: 1;
+  }
+  
+  .testimonial-text p {
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .testimonial-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .testimonial-quote {
+      flex: 0 0 auto;
+      margin-bottom: 1.5rem;
+    }
+  
+    .hero-title {
+      font-size: 2rem;
+    }
+  
+    .section-title {
+      font-size: 2rem;
+    }
+  
+    .content {
+      padding: 1rem;
+    }
+  }
