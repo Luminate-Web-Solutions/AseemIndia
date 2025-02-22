@@ -30,7 +30,8 @@ const routes: Routes = [
   { path: 'projects', component: ProjectsComponent },
   { path: 'reports', component: ReportsComponent },
   { path: 'team', component: TeamComponent },
-  { path: '', redirectTo: '/home', pathMatch: 'full' } // Default route
+  { path: '', component: HomeComponent },
+  // { path: '', redirectTo: '/home', pathMatch: 'full' } // Default route
 ];
 
 @NgModule({
