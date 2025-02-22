@@ -1,0 +1,105 @@
+/* Global styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/aseem-banner-2.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 1920px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    margin-left: -365px;
+  }
+  
+  .hero-title {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+  }
+  
+  .content {
+    padding: 0 2rem;
+  }
+  
+  .main-title {
+    color: #dc3545;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 2rem;
+  }
+  
+  .section {
+    margin-bottom: 3rem;
+  }
+  
+  .pension-desc {
+    margin-bottom: 2rem;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f8f9fa;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f8f9fa;
+  }
+  
+  .scholarships {
+    margin: 2rem 0;
+  }
+  
+  .scholarships ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .leverage-section {
+    margin-top: 2rem;
+  }
+  
+  .graph {
+    margin: 2rem 0;
+    text-align: center;
+  }
+  
+  .graph img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .leverage-note {
+    text-align: center;
+    font-style: italic;
+    color: #666;
+  }
