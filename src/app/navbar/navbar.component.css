@@ -52,6 +52,7 @@
   .dropdown-icon {
     font-size: 0.75rem;
     margin-left: 0.25rem;
+    margin-top: 3px;
   }
   
   .dropdown-menu {
