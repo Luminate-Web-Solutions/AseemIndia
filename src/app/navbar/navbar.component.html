@@ -3,21 +3,16 @@
         <div class="logo">
             <img src="logo.png" alt="ASEEM India" routerLink="/">
         </div>
-        <div class="hamburger" (click)="toggleNav()">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
-        <ul class="nav-items" [class.active]="isNavActive">
+        <ul class="nav-items">
             <li class="nav-item">
                 <a routerLink="/" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
-                <a routerLink="/about" class="nav-link" (click)="toggleDropdown($event)">
+                <a routerLink="/about" class="nav-link">
                     About Us
                     <span class="dropdown-icon">▼</span>
                 </a>
-                <ul class="dropdown-menu" [class.active]="isAboutDropdownActive">
+                <ul class="dropdown-menu">
                     <li><a routerLink="/team">Team</a></li>
                     <li><a routerLink="/advocacy">Advocacy & Legal Interventions</a></li>
                     <li><a routerLink="/impact">Our Impact</a></li>
@@ -25,12 +20,15 @@
                     <li><a routerLink="/partners">Partners</a></li>
                 </ul>
             </li>
+            <!-- <li class="nav-item">
+                <a routerLink="/blog" class="nav-link">Blog</a>
+            </li> -->
             <li class="nav-item">
-                <a routerLink="/projects" class="nav-link" (click)="toggleDropdown($event)">
+                <a routerLink="/projects" class="nav-link">
                     Projects & Reports
                     <span class="dropdown-icon">▼</span>
                 </a>
-                <ul class="dropdown-menu" [class.active]="isProjectsDropdownActive">
+                <ul class="dropdown-menu">
                     <li><a routerLink="/projects">Projects</a></li>
                     <li><a routerLink="/reports">Reports, Publications & Research</a></li>
                     <li><a routerLink="/gallery">Gallery</a></li>
@@ -38,15 +36,16 @@
                 </ul>
             </li>
             <li class="nav-item">
-                <a routerLink="contact" class="nav-link" (click)="toggleDropdown($event)">
+                <a routerLink="contact" class="nav-link">
                     Contact Us
                     <span class="dropdown-icon">▼</span>
                 </a>
-                <ul class="dropdown-menu" [class.active]="isContactDropdownActive">
+                <ul class="dropdown-menu">
                     <li><a routerLink="/contact">Contact Us</a></li>
                     <li><a routerLink="/donate">Donate/Support</a></li>
                 </ul>
             </li>
+            <!-- WhatsApp Link in Navbar -->
             <li class="nav-item whatsapp-nav">
                 <a href="https://wa.me/918897865025" target="_blank">
                     <img src="whatsapp.png" alt="WhatsApp">
@@ -54,4 +53,5 @@
             </li>
         </ul>
     </div>
-</nav>
+  </nav>
+  
