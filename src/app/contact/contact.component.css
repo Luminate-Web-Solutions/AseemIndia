@@ -195,3 +195,25 @@
       padding: 1.5rem;
     }
   }
+
+  .social-links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .social-link {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    transition: all 0.3s ease;
+  }
+  
+  .social-link:hover {
+    background: var(--primary-color);
+    color: white;
+  }
