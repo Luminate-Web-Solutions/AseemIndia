@@ -1,112 +1,265 @@
 /* Hero Section */
-.hero {
-    position: relative;
-    height: 400px;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/aseem-banner-2.jpg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-align: center;
-  }
-  
-  .hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.4);
-  }
-  
-  .hero h1 {
-    position: relative;
-    z-index: 1;
+.hero-section {
+  position: relative;
+  height: 60vh;
+  min-height: 400px;
+  overflow: hidden;
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/assets/images/advocacy/advocacy-hero.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero-description {
+  font-size: 1.25rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #e53935;
+}
+
+/* Legal Interventions Section */
+.legal-card {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.legal-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.legal-icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: #e53935;
+}
+
+.legal-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.legal-description {
+  color: #6c757d;
+  margin-bottom: 1.5rem;
+}
+
+.legal-outcome {
+  background-color: rgba(229, 57, 53, 0.1);
+  padding: 1rem;
+  border-radius: 4px;
+  color: #e53935;
+}
+
+/* Campaigns Section */
+.campaign-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.campaign-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.campaign-image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.campaign-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.campaign-info {
+  padding: 1.5rem;
+}
+
+.campaign-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.campaign-description {
+  color: #6c757d;
+  margin-bottom: 0;
+}
+
+.method-card {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.method-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.method-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #e53935;
+}
+
+.method-card h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.method-card p {
+  color: #6c757d;
+  margin-bottom: 0;
+}
+
+/* Publications Section */
+.publication-card {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.publication-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.publication-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.publication-authors {
+  color: #e53935;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.publication-description {
+  color: #6c757d;
+  margin-bottom: 0;
+}
+
+.report-item {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.report-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.report-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+/* Get Involved Section */
+.get-involved-section {
+  background-color: #212529;
+}
+
+.get-involved-section .section-title::after {
+  background-color: white;
+}
+
+/* Media Queries */
+@media (max-width: 767px) {
+  .hero-title {
     font-size: 2.5rem;
-    font-weight: 700;
   }
   
-  /* Advocacy Section */
-  .advocacy-section {
-    background-color: white;
+  .hero-description {
+    font-size: 1rem;
   }
   
-  .advocacy-icon {
-    background: #f8f9fa;
-    padding: 2rem;
-    border-radius: 50%;
-    width: 250px;
-    height: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
+  .section-title {
+    font-size: 1.75rem;
   }
   
-  .advocacy-icon img {
-    max-width: 150%;
-    height: auto;
+  .publication-card {
+    padding: 1.5rem;
   }
   
-  /* Legal Interventions Section */
-  .legal-interventions-section {
-    background-color: #f8f9fa;
+  .report-item {
+    padding: 1rem;
   }
-  
-  .legal-info {
-    background: white;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .achievements-list {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .achievements-list li {
-    margin-bottom: 1.5rem;
-    padding-left: 2rem;
-    position: relative;
-  }
-  
-  .achievements-list li i {
-    position: absolute;
-    left: 0;
-    top: 4px;
-    color: var(--primary-color);
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .hero {
-      height: 300px;
-    }
-  
-    .hero h1 {
-      font-size: 2rem;
-    }
-  
-    .advocacy-icon {
-      width: 200px;
-      height: 200px;
-      margin-bottom: 2rem;
-    }
-  }
-  
-  @media (max-width: 576px) {
-    .hero {
-      height: 250px;
-    }
-  
-    .hero h1 {
-      font-size: 1.75rem;
-    }
-  
-    .legal-info {
-      padding: 1.5rem;
-    }
-  }
+}

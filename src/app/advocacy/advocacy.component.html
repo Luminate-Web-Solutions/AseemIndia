@@ -1,64 +1,178 @@
-<header class="hero">
+<!-- Hero Section -->
+<section class="hero-section">
+  <div class="hero-image">
     <div class="hero-overlay"></div>
-    <div class="container text-center">
-      <h1>Advocacy & Legal Interventions</h1>
-    </div>
-  </header>
-  
-  <section class="advocacy-section py-5">
     <div class="container">
-      <div class="row align-items-center mb-5">
-        <div class="col-md-4">
-          <div class="advocacy-icon">
-            <img src="aseem-banner-1.jpg" alt="Advocacy Icon" class="img-fluid" >
+      <div class="hero-content">
+        <h1 class="hero-title">Advocacy & Legal Interventions</h1>
+        <p class="hero-description">
+          Making a difference through advocacy, legal action, and policy change
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Advocacy Section -->
+<section class="advocacy-section py-5">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">Advocacy</h2>
+    <div class="row align-items-center">
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <img src="assets/images/advocacy/advocacy-meeting.jpg" alt="Advocacy Meeting" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-lg-6">
+        <p>
+          Advocacy is one of the key areas of ASEEM. We advocate for the rights and entitlements of the marginalized communities by engaging with the government officials and elected representatives. We make them aware of the community needs and challenges and urge them to take appropriate actions.
+        </p>
+        <p>
+          We also suggest ways to streamline the scheme criteria and procedures and simplify the scheme application process to make them more accessible and user-friendly for the marginalized people. We periodically generate reports based on our research and field observations and share them with the relevant authorities and stakeholders.
+        </p>
+        <p>
+          We also organize consultations with different actors, such as civil society organizations, media, academics, and experts, to discuss the issues and solutions related to the marginalized communities.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Legal Interventions Section -->
+<section class="legal-section py-5 bg-light">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">Legal Interventions</h2>
+    <p class="text-center mb-4">
+      We use legal interventions to complement our advocacy efforts and to seek justice for the marginalized communities. We file public interest litigations (PILs) in the courts to address the issues that affect the marginalized people and to challenge the policies and actions that violate their rights and entitlements.
+    </p>
+    <p class="text-center mb-5">
+      PILs are a powerful tool for social change and for upholding the rule of law and ensuring the balance between law and justice.
+    </p>
+    
+    <div class="row g-4">
+      <div class="col-md-4" *ngFor="let intervention of legalInterventions">
+        <div class="legal-card h-100">
+          <div class="legal-icon">
+            <i class="fa fa-gavel"></i>
+          </div>
+          <h3 class="legal-title">{{intervention.title}}</h3>
+          <p class="legal-description">{{intervention.description}}</p>
+          <div class="legal-outcome">
+            <strong>Outcome:</strong> {{intervention.outcome}}
           </div>
         </div>
-        <div class="col-md-8">
-          <h2 class="text-primary">Advocacy</h2>
-          <p class="lead">
-            ASEEM engages with Government Officials and Elected Representatives to make them aware of the
-            community needs, to streamline scheme criteria and procedures and simplify scheme application process.
-            We periodically generate reports and organize consultations with different stakeholders.
-          </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Campaigns Section -->
+<section class="campaigns-section py-5">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">Campaigns</h2>
+    <p class="text-center mb-4">
+      ASEEM is part of various global partners and campaigns that work on issues related to the marginalized communities. We collaborate with national and international organizations to take part in several campaigns on issues such as "Inequality", "Right to free healthcare services in Urban Primary Health Centres (UPHCs)", "Vaccine Equality for Least Developed Countries (LDCs)", Social Security, basic needs and so on.
+    </p>
+    
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3" *ngFor="let campaign of campaigns">
+        <div class="campaign-card h-100">
+          <div class="campaign-image">
+            <img [src]="campaign.image" [alt]="campaign.title" class="img-fluid">
+          </div>
+          <div class="campaign-info">
+            <h3 class="campaign-title">{{campaign.title}}</h3>
+            <p class="campaign-description">{{campaign.description}}</p>
+          </div>
         </div>
       </div>
     </div>
-  </section>
-  
-  <section class="legal-interventions-section py-5 bg-light">
-    <div class="container">
-      <h2 class="text-primary mb-4">Legal Interventions</h2>
-      <p class="lead mb-4">
-        ASEEM engages with Government Officials and Elected Representatives to make them aware of the community
-      </p>
-  
-      <div class="legal-info mb-5">
-        <p>
-          Our advocacy efforts are augmented through Public Interest Litigations (PILs). PILs provide access to courts common people for legal
-          redress and thus resolve long pending issues which effect marginalized communities. PIL is an important instrument of social change
-          and for maintaining the Rule of law and accelerating the balance between law and justice. PILs have helped us to:
-        </p>
-  
-        <ul class="achievements-list mt-4">
-          <li>
-            <i class="fas fa-gavel"></i>
-            Obtain Stay Orders on the Implementation of NPR exercise in Telangana State
-          </li>
-          <li>
-            <i class="fas fa-shield-alt"></i>
-            To initiate action against police officials for excesses committed on helpless people during the COVID lock down.
-          </li>
-          <li>
-            <i class="fas fa-balance-scale"></i>
-            To initiate action against the state government for indiscriminately cancelling 20 lakh White Ration Card, thus depriving the poor
-            of subsidized rations.
-          </li>
-        </ul>
-      </div>
-  
-      <div class="text-center">
-        <p class="font-italic">For more details, please go to Reports section*</p>
-        <a routerLink="/reports" class="btn btn-primary mt-3">Reports</a>
+    
+    <div class="campaign-methods mt-5">
+      <h3 class="text-center mb-4">Our Campaign Methods</h3>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="method-card">
+            <div class="method-icon">
+              <i class="fa fa-laptop"></i>
+            </div>
+            <h4>Online & Offline Workshops</h4>
+            <p>We conduct online and offline workshops to educate and empower the marginalized people and to raise awareness among the public.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="method-card">
+            <div class="method-icon">
+              <i class="fa fa-comments"></i>
+            </div>
+            <h4>Consultations & Dialogues</h4>
+            <p>We organize consultations with different stakeholders to discuss the problems and solutions related to the marginalized communities.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="method-card">
+            <div class="method-icon">
+              <i class="fa fa-newspaper-o"></i>
+            </div>
+            <h4>Media & Advocacy</h4>
+            <p>We issue press releases and make representations to government authorities to advocate for the rights of marginalized people.</p>
+          </div>
+        </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+<!-- Publications Section -->
+<section class="publications-section py-5 bg-light">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">Publications & Research</h2>
+    
+    <div class="publications-list">
+      <div class="publication-card" *ngFor="let publication of publications">
+        <div class="row align-items-center">
+          <div class="col-md-9">
+            <h3 class="publication-title">{{publication.title}}</h3>
+            <p class="publication-authors">By {{publication.authors}}</p>
+            <p class="publication-description">{{publication.description}}</p>
+          </div>
+          <div class="col-md-3 text-md-end">
+            <a [href]="publication.link" target="_blank" class="btn btn-outline-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="annual-reports mt-5">
+      <h3 class="text-center mb-4">Annual Reports</h3>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="reports-list">
+            <div class="report-item" *ngFor="let report of annualReports">
+              <div class="row align-items-center">
+                <div class="col-8">
+                  <h4 class="report-title">Annual Report {{report.year}}</h4>
+                </div>
+                <div class="col-4 text-end">
+                  <a [href]="report.link" target="_blank" class="btn btn-sm btn-primary">Download</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Get Involved Section -->
+<section class="get-involved-section py-5 bg-dark text-white">
+  <div class="container text-center">
+    <h2 class="section-title text-white mb-4">Support Our Advocacy Work</h2>
+    <p class="mb-4">
+      If you believe in our mission and want to support our advocacy and legal interventions, please consider donating or volunteering with us.
+    </p>
+    <div class="d-flex justify-content-center gap-3">
+      <a routerLink="/donate" class="btn btn-primary btn-lg">Donate Now</a>
+      <a routerLink="/contact" class="btn btn-outline-light btn-lg">Contact Us</a>
+    </div>
+  </div>
+</section>

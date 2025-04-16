@@ -1,6 +1,267 @@
-.bank-details {
-    background: rgba(255, 255, 255, 0.05);
-    padding: 2rem;
-    border-radius: 10px;
-    max-width: 600px;
+/* Donate Page Styles */
+.donate-page {
+  padding-top: 64px; /* For fixed navbar */
+}
+
+/* Hero Section */
+.donate-hero {
+  background-color: #212529;
+  color: white;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.page-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.page-subtitle {
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Section Styles */
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #e53935;
+}
+
+/* Why Donate Section */
+.why-donate-card {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  height: 100%;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.why-donate-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.icon-wrapper {
+  width: 80px;
+  height: 80px;
+  background-color: rgba(229, 57, 53, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+}
+
+.icon-wrapper mat-icon {
+  font-size: 40px;
+  width: 40px;
+  height: 40px;
+  color: #e53935;
+}
+
+.why-donate-card h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.why-donate-card p {
+  color: #6c757d;
+}
+
+/* Impact Section */
+.impact-card {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.impact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.impact-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #e53935;
+}
+
+.impact-numbers {
+  margin-bottom: 1.5rem;
+}
+
+.impact-numbers:last-child {
+  margin-bottom: 0;
+}
+
+.impact-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #212529;
+}
+
+.impact-label {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+.impact-summary {
+  font-size: 1.25rem;
+  font-weight: 500;
+  max-width: 800px;
+  margin: 2rem auto 0;
+}
+
+/* Donate Now Section */
+.donate-card {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.donate-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.donate-details {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.donate-details li {
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.donate-details li:last-child {
+  margin-bottom: 0;
+}
+
+.donation-qr {
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.donate-note {
+  font-size: 0.875rem;
+  font-style: italic;
+  text-align: center;
+  color: #6c757d;
+}
+
+/* Testimonials Section */
+.testimonial-card {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  height: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-content {
+  margin-bottom: 1.5rem;
+}
+
+.testimonial-content p {
+  font-style: italic;
+  color: #6c757d;
+}
+
+.testimonial-author h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.testimonial-author p {
+  color: #6c757d;
+  margin-bottom: 0;
+}
+
+/* FAQ Section */
+.mat-expansion-panel {
+  margin-bottom: 1rem;
+  border-radius: 8px !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
+.mat-expansion-panel-header {
+  padding: 1.25rem !important;
+}
+
+.mat-expansion-panel-body {
+  padding: 0 1.25rem 1.25rem !important;
+}
+
+.mat-expansion-panel-header-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #212529;
+}
+
+/* CTA Section */
+.cta-section {
+  background-color: #212529;
+}
+
+.cta-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+  .donate-hero {
+    padding: 3rem 0;
   }
+  
+  .page-title {
+    font-size: 2.5rem;
+  }
+  
+  .section-title {
+    font-size: 1.75rem;
+  }
+  
+  .impact-number {
+    font-size: 2rem;
+  }
+  
+  .cta-section h2 {
+    font-size: 2rem;
+  }
+}

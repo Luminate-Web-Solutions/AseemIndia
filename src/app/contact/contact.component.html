@@ -1,98 +1,178 @@
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    </head>
-    <div class="container">
-        <div class="map-section">
-            <iframe 
-            src="https://www.openstreetmap.org/export/embed.html?bbox=78.462472%2C17.403556%2C78.462472%2C17.403556&layer=mapnik&marker=17.403556%2C78.462472"
-                width="100%" 
-                height="450" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy">
-            </iframe>
-        </div>
+<div class="contact-page">
+    <!-- Hero Section -->
+    <section class="contact-hero">
+      <div class="container">
+        <h1 class="page-title">Contact Us</h1>
+        <p class="page-subtitle">We'd love to hear from you. Get in touch with us.</p>
+      </div>
+    </section>
     
-        <div class="content-section">
-            <!-- <div class="subheading">SUBHEADING</div> -->
-            <h1>Contact Us</h1>
+    <!-- Map Section -->
+    <section class="map-section">
+      <iframe 
+        src="https://www.openstreetmap.org/export/embed.html?bbox=78.462472%2C17.403556%2C78.462472%2C17.403556&layer=mapnik&marker=17.403556%2C78.462472"
+        width="100%" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy">
+      </iframe>
+    </section>
     
-            <div class="social-media">
-                <span class="social-media-text">SOCIAL MEDIA</span>
+    <!-- Contact Info & Form Section -->
+    <section class="contact-section">
+      <div class="container">
+        <div class="row">
+          <!-- Contact Information -->
+          <div class="col-lg-5 mb-5 mb-lg-0">
+            <div class="contact-info-card">
+              <h2 class="section-title">Get In Touch</h2>
+              
+              <div class="contact-info-item">
+                <div class="icon-wrapper">
+                  <mat-icon>location_on</mat-icon>
+                </div>
+                <div class="info-content">
+                  <h3>Our Location</h3>
+                  <p>
+                    # 6-2-1/15, Flat No.205, HGH Residency,<br>
+                    Lakdikapul, Hyderabad - 500004,<br>
+                    Telangana, India
+                  </p>
+                </div>
+              </div>
+              
+              <div class="contact-info-item">
+                <div class="icon-wrapper">
+                  <mat-icon>email</mat-icon>
+                </div>
+                <div class="info-content">
+                  <h3>Email Address</h3>
+                  <p>
+                    <a href="mailto:aseemindia.org@gmail.com">aseemindia.org&#64;gmail.com</a>
+                  </p>
+                </div>
+              </div>
+              
+              <div class="social-media">
+                <h3>Connect With Us</h3>
                 <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                  <a href="#" class="social-icon" aria-label="Facebook">
+                    <mat-icon>facebook</mat-icon>
+                  </a>
+                  <a href="#" class="social-icon" aria-label="Twitter">
+                    <mat-icon>twitter</mat-icon>
+                  </a>
+                  <a href="#" class="social-icon" aria-label="Instagram">
+                    <mat-icon>instagram</mat-icon>
+                  </a>
+                  <a href="#" class="social-icon" aria-label="LinkedIn">
+                    <mat-icon>linkedin</mat-icon>
+                  </a>
                 </div>
+              </div>
             </div>
-    
-            <div class="contact-info">
-                <div class="info-block">
-                    <h3>OUR CONTACT</h3>
-                    <div class="info-item address">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div class="info-content">
-                            <h4>Address</h4>
-                            <p> 6-2-1/15, Flat No.205, HGH Residency, <br>
-                            Lakdikapul, Hyderabad - 500004, T.S - India</p>
-                        </div>
-                    </div>
-    
-                    <div class="info-item phone">
-                        <i class="fas fa-phone"></i>
-                        <div class="info-content">
-                            <h4>Call Us</h4>
-                            <p>+91 9898798765 | +91 9630365362</p>
-                        </div>
-                    </div>
-    
-                    <div class="info-item email">
-                        <i class="fas fa-envelope"></i>
-                        <div class="info-content">
-                            <h4>Email Address</h4>
-                            <p>alisghar60&#64;gmail.com | sgmasood&#64;gmail.com</p>
-                        </div>
-                    </div>
+          </div>
+          
+          <!-- Contact Form -->
+          <div class="col-lg-7">
+            <div class="contact-form-card">
+              <h2 class="section-title">Send Us A Message</h2>
+              <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <mat-form-field appearance="outline" class="w-100">
+                      <mat-label>Your Name</mat-label>
+                      <input matInput formControlName="name" required>
+                      <mat-error *ngIf="contactForm.get('name')?.hasError('required') && contactForm.get('name')?.touched">
+                        Name is required
+                      </mat-error>
+                    </mat-form-field>
+                  </div>
+                  
+                  <div class="col-md-6 mb-4">
+                    <mat-form-field appearance="outline" class="w-100">
+                      <mat-label>Your Email</mat-label>
+                      <input matInput formControlName="email" required type="email">
+                      <mat-error *ngIf="contactForm.get('email')?.hasError('required') && contactForm.get('email')?.touched">
+                        Email is required
+                      </mat-error>
+                      <mat-error *ngIf="contactForm.get('email')?.hasError('email') && contactForm.get('email')?.touched">
+                        Please enter a valid email address
+                      </mat-error>
+                    </mat-form-field>
+                  </div>
                 </div>
-            </div>
-    
-            <div class="contact-form">
-                <div class="send-message">SEND MESSAGE</div>
-                <form>
-                    <input type="text" placeholder="Your Name (required)" required>
-                    <textarea placeholder="Your Message" rows="5"></textarea>
-                    <button type="submit" class="send-request">Send Request</button>
-                </form>
-            </div>
-    
-            <div class="join-section">
-                <h2>Join with us</h2>
-                <p>Interns and Volunteers add rich and diverse value to our work.<br>
-                We welcome interns and volunteers who can help us.</p>
-                <p>Please write to us at join&#64;localhost attaching a brief background of<br>
-                yourself if you wish to intern/volunteer with ASLM</p>
-    
-                <div class="numbered-list">
-                    <div class="list-item">
-                        <span>1.</span>
-                        <p>Document case studies that demonstrate the impact of ASLM interventions on the community</p>
-                    </div>
-                    <div class="list-item">
-                        <span>2.</span>
-                        <p>Evaluate capacity building needs of our staff and community workers and develop Capacity Building Programmes</p>
-                    </div>
-                    <div class="list-item">
-                        <span>3.</span>
-                        <p>Research and document community issues and problems with a Rights and Entitlements perspective and help develop advocacy campaigns around them.</p>
-                    </div>
-                    <div class="list-item">
-                        <span>4.</span>
-                        <p>Conduct grass roots level workshops under our LEAD Programme</p>
-                    </div>
+                
+                <div class="mb-4">
+                  <mat-form-field appearance="outline" class="w-100">
+                    <mat-label>Subject</mat-label>
+                    <input matInput formControlName="subject">
+                  </mat-form-field>
                 </div>
+                
+                <div class="mb-4">
+                  <mat-form-field appearance="outline" class="w-100">
+                    <mat-label>Your Message</mat-label>
+                    <textarea matInput formControlName="message" rows="6" required></textarea>
+                    <mat-error *ngIf="contactForm.get('message')?.hasError('required') && contactForm.get('message')?.touched">
+                      Message is required
+                    </mat-error>
+                  </mat-form-field>
+                </div>
+                
+                <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+              </form>
             </div>
+          </div>
         </div>
-    </div>
+      </div>
+    </section>
     
+    <!-- Get Involved Section -->
+    <section class="get-involved-section py-5 bg-light">
+      <div class="container">
+        <h2 class="section-title text-center mb-5">Join With Us</h2>
+        <p class="text-center mb-4">
+          Interns and Volunteers add rich and diverse value to our work.<br>
+          We welcome interns and volunteers who can help us.
+        </p>
+        
+        <div class="row g-4 mt-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="numbered-card">
+              <div class="number">1</div>
+              <p>Document case studies that demonstrate the impact of ASEEM interventions on the community</p>
+            </div>
+          </div>
+          
+          <div class="col-md-6 col-lg-3">
+            <div class="numbered-card">
+              <div class="number">2</div>
+              <p>Evaluate capacity building needs of our staff and community workers and develop Capacity Building Programmes</p>
+            </div>
+          </div>
+          
+          <div class="col-md-6 col-lg-3">
+            <div class="numbered-card">
+              <div class="number">3</div>
+              <p>Research and document community issues and problems with a Rights and Entitlements perspective</p>
+            </div>
+          </div>
+          
+          <div class="col-md-6 col-lg-3">
+            <div class="numbered-card">
+              <div class="number">4</div>
+              <p>Conduct grass roots level workshops under our LEAD Programme</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="text-center mt-5">
+          <p>
+            Please write to us at <a href="mailto:aseemindia.org@gmail.com">aseemindia.org&#64;gmail.com</a> with a brief introduction of yourself and your areas of interest.
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>

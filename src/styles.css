@@ -1,1 +1,147 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+
+/* Global Styles */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding-top: 64px; /* For fixed navbar */
+}
+
+/* Utility Classes */
+.text-primary-color {
+  color: #e53935 !important;
+}
+
+.bg-primary-color {
+  background-color: #e53935 !important;
+}
+
+.text-secondary-color {
+  color: #212529 !important;
+}
+
+.bg-secondary-color {
+  background-color: #212529 !important;
+}
+
+.text-accent-color {
+  color: #ffc107 !important;
+}
+
+.bg-accent-color {
+  background-color: #ffc107 !important;
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: #e53935;
+  border-color: #e53935;
+}
+
+.btn-primary:hover, 
+.btn-primary:focus, 
+.btn-primary:active {
+  background-color: #c62828;
+  border-color: #c62828;
+}
+
+.btn-outline-primary {
+  color: #e53935;
+  border-color: #e53935;
+}
+
+.btn-outline-primary:hover, 
+.btn-outline-primary:focus, 
+.btn-outline-primary:active {
+  background-color: #e53935;
+  border-color: #e53935;
+}
+
+/* Animation Classes */
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Section Padding */
+.section-padding {
+  padding: 5rem 0;
+}
+
+/* Card Styles */
+.card {
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Styles */
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Swiper Overrides */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 1.5rem;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+}
+
+/* Angular Material Overrides */
+.mat-form-field-appearance-outline .mat-form-field-outline {
+  color: rgba(0, 0, 0, 0.12);
+}
+
+.mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+  color: #e53935;
+}
+
+.mat-form-field-appearance-outline.mat-form-field-invalid.mat-form-field-invalid .mat-form-field-outline-thick {
+  color: #f44336;
+}
+
+.mat-input-element {
+  caret-color: #e53935;
+}
+
+.mat-form-field-label {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.mat-form-field.mat-focused .mat-form-field-label {
+  color: #e53935;
+}
+
+.mat-form-field.mat-form-field-invalid .mat-form-field-label {
+  color: #f44336;
+}

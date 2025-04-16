@@ -1,81 +1,67 @@
 <footer class="footer">
-    <div class="footer-container">
-      <!-- Logo Section -->
-      <div class="footer-section logo-section">
-        <img src="logo-whitebg.jpg" alt="ASEEM Logo" class="footer-logo">
-      </div>
-  
-      <!-- Navigation Section with Dropdowns -->
-      <div class="footer-section navigation">
-        <h3>Navigation</h3>
-        <ul class="nav-items">
-          <li class="nav-item">
-            <a routerLink="/home" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item">
-            <a routerLink="about" class="nav-link">
-              About Us
-              <span class="dropdown-icon">▼</span>
-            </a>
-            <ul class="dropdown-menu">
-              <li><a routerLink="/team">Team</a></li>
-              <li><a routerLink="/advocacy">Advocacy & Legal Interventions</a></li>
-              <li><a routerLink="/impact">Our Impact</a></li>
-              <li><a routerLink="/getinvolved">Get Involved</a></li>
-              <li><a routerLink="/partners">Partners</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a routerLink="/blog" class="nav-link">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a routerLink="projects" class="nav-link">
-              Projects & Reports
-              <span class="dropdown-icon">▼</span>
-            </a>
-            <ul class="dropdown-menu">
-              <li><a routerLink="/projects">Projects</a></li>
-              <li><a routerLink="/reports">Reports, Publications & Research</a></li>
-              <li><a routerLink="/gallery">Gallery</a></li>
-              <li><a routerLink="/casestudies">Case Studies</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a routerLink="contact" class="nav-link">
-              Contact Us
-              <span class="dropdown-icon">▼</span>
-            </a>
-            <ul class="dropdown-menu">
-              <li><a routerLink="/contact">Contact Us</a></li>
-              <!-- <li><a routerLink="/donate">Donate/Support</a></li> -->
-            </ul>
-          </li>
-        </ul>
-      </div>
-  
-      <!-- Contact Section -->
-      <div class="footer-section contact">
-        <h3>Contact Us</h3>
-        <p># 6-2-1/15, Flat No.205, HGH Residency, <br>
-          Lakdikapul, Hyderabad - 500004, T.S - India</p>
-        <p><a routerLink="tel:+918979868205">+91 8979868205</a> | <a routerLink="tel:+919050557002">+91 9050557002</a></p>
-        <p>
-          <a routerLink="mailto:alisghar60@gmail.com">alisghar60&#64;gmail.com</a><br>
-          <a routerLink="mailto:sgmasood@gmail.com">sgmasood&#64;gmail.com</a>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <div class="footer-logo">
+          <img src="logo-whitebg.jpg" alt="ASEEM Logo" class="img-fluid">
+        </div>
+        <p class="mt-3">
+          ASEEM envisions a just and inclusive society where every individual lives with dignity and equal rights.
         </p>
       </div>
-  
-      <!-- Social Media Section -->
-      <div class="footer-section social">
-        <h3>Get Connected</h3>
-        <span class="social-icons">
-          <i class="fas fa-map-marker-alt"></i>
-          <i class="fas fa-times"></i>
-        </span>
+      
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="footer-heading">Quick Links</h5>
+        <ul class="footer-links">
+          <li><a routerLink="/">Home</a></li>
+          <li><a routerLink="/about">About Us</a></li>
+          <li><a routerLink="/projects">Projects</a></li>
+          <li><a routerLink="/reports">Reports & Publications</a></li>
+          <li><a routerLink="/news">News Reports</a></li>
+          <li><a routerLink="/gallery">Gallery</a></li>
+          <li><a routerLink="/contact">Contact Us</a></li>
+          <li><a routerLink="/donate">Donate/Support</a></li>
+        </ul>
+      </div>
+      
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="footer-heading">Contact Us</h5>
+        <address>
+          # 6-2-1/15, Flat No.205, HGH Residency,<br>
+          Lakdikapul, Hyderabad - 500004,<br>
+          Telangana, India
+        </address>
+        <p class="mt-3">
+          <a href="mailto:aseemindia.org@gmail.com">aseemindia.org&#64;gmail.com</a>
+        </p>
+      </div>
+      
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="footer-heading">Our Partners</h5>
+        <ul class="footer-links">
+          <li><a href="#">SAAPE</a></li>
+          <li><a href="#">LDC Watch</a></li>
+          <li><a href="#">Safa Baitul Maal</a></li>
+          <li><a href="#">Hyderabad Urban Lab</a></li>
+          <li><a href="#">Focus High School</a></li>
+          <li><a href="#">Deccan Archive Foundation</a></li>
+        </ul>
       </div>
     </div>
-    <div class="designed-by">
-      Designed by <a href="https://luminatewebsol.com/" target="_blank">Luminate Web Solutions</a>
+    
+    <div class="footer-bottom">
+      <div class="row">
+        <div class="col-md-6">
+          <p class="mb-0">
+            &copy; {{ currentYear }} ASEEM. All Rights Reserved.
+          </p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <p class="mb-0">
+            Designed by <a href="https://luminatewebsol.com/" target="_blank" rel="noopener noreferrer">Luminate Web Solutions</a>
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
-  </footer>
-  
+</footer>

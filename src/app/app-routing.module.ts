@@ -15,6 +15,7 @@ import { PartnersComponent } from './partners/partners.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ReportsComponent } from './reports/reports.component';
 import { TeamComponent } from './team/team.component';
+import { NewsReportComponent } from './news-report/news-report.component';
 
 const routes: Routes = [
   { path: 'about', component: AboutComponent },
@@ -30,6 +31,7 @@ const routes: Routes = [
   { path: 'projects', component: ProjectsComponent },
   { path: 'reports', component: ReportsComponent },
   { path: 'team', component: TeamComponent },
+  { path: 'news', component: NewsReportComponent },
   { path: '', component: HomeComponent },
   // { path: '', redirectTo: '/home', pathMatch: 'full' } // Default route
 ];

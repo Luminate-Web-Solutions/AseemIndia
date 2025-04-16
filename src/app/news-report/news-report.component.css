@@ -1,0 +1,240 @@
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 50vh;
+    min-height: 300px;
+    overflow: hidden;
+  }
+  
+  .hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/assets/images/news/news-hero.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+  .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-description {
+    font-size: 1.25rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Section Title */
+  .section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: 1rem;
+  }
+  
+  .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 3px;
+    background-color: #e53935;
+  }
+  
+  /* News Section */
+  .news-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 2rem;
+  }
+  
+  .news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .news-image {
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .news-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .news-content {
+    padding: 1.5rem;
+  }
+  
+  .news-date {
+    color: #6c757d;
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .news-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .news-summary {
+    color: #6c757d;
+    margin-bottom: 1rem;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar-section {
+    margin-bottom: 2rem;
+  }
+  
+  .sidebar-section:last-child {
+    margin-bottom: 0;
+  }
+  
+  .sidebar-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-bottom: 0.75rem;
+  }
+  
+  .sidebar-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: #e53935;
+  }
+  
+  .sidebar-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+  
+  .sidebar-list li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .sidebar-list li:last-child {
+    margin-bottom: 0;
+  }
+  
+  .sidebar-list a {
+    color: #6c757d;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .sidebar-list a:hover {
+    color: #e53935;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .social-icon {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(229, 57, 53, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e53935;
+    transition: all 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    background-color: #e53935;
+    color: white;
+  }
+  
+  /* Modal */
+  .modal-date {
+    color: #6c757d;
+    font-size: 0.875rem;
+  }
+  
+  .modal-content-text {
+    color: #6c757d;
+  }
+  
+  /* Subscribe Section */
+  .subscribe-form .form-control {
+    height: 50px;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  .subscribe-form .btn {
+    height: 50px;
+    border-radius: 0 4px 4px 0;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 767px) {
+    .hero-title {
+      font-size: 2.5rem;
+    }
+    
+    .hero-description {
+      font-size: 1rem;
+    }
+    
+    .section-title {
+      font-size: 1.75rem;
+    }
+    
+    .news-image {
+      height: 200px;
+    }
+    
+    .sidebar {
+      margin-top: 2rem;
+    }
+  }

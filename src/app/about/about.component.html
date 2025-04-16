@@ -1,145 +1,193 @@
-<header class="hero">
-  <div class="hero-overlay"></div>
-  <div class="container text-center hero-content">
-    <h1>About Us</h1>
-    <p class="lead">
-      ASEEM engages in advocacy / legal interventions, action research and empowerment of grass roots
-      organizations and social workers in the Muslim Community to enable marginalized community to
-      access their Constitutional Rights and Entitlements.
-    </p>
-    <!-- <a routerLink="#contact" class="btn btn-outline-light">Call to Action</a> -->
-  </div>
-</header>
-
-<!-- <div class="video-section">
-  <div class="container">
-    <div class="video-container">
-      <img src="assets/images/about-video-thumbnail.jpg" alt="About ASEEM" class="img-fluid rounded">
-      <div class="play-button">
-        <i class="fas fa-play"></i>
+<!-- Hero Section -->
+<section class="hero-section">
+  <div class="hero-image">
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">About ASEEM</h1>
+        <p class="hero-description">
+          Working for the rights and entitlements of marginalized communities
+        </p>
       </div>
     </div>
   </div>
-</div> -->
+</section>
 
-<section class="about-intro py-5">
-  <div class="container text-center">
-    <img src="logo.png" alt="ASEEM Logo" class="logo mb-4">
-    <p class="lead">
-      There are numerous Muslim Charities which provide relief, succour and support to millions of poor from within the
-      community. Their rationale is that philanthropy and charity are central tenets of Islam. However, a closer
-      inspection reveals that often well meaning philanthropy has created a community that is dependent on hand-outs
-      and alienated it from the mainstream. Thus, the movement from charity towards development and empowerment
-      which transforms beneficiaries into stakeholders in the process of development seems to have completely
-      bypassed the community. This becomes a major reason why the community seldom accesses government
-      development programmes resulting in movement away from the national mainstream.
-    </p>
+<!-- Vision & Mission Section -->
+<section class="vision-mission-section py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mb-4 mb-md-0">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="card-body">
+            <h2 class="card-title">Vision</h2>
+            <p class="card-text">
+              ASEEM envisions a just and inclusive society where every individual lives with dignity and equal rights.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="card-body">
+            <h2 class="card-title">Mission</h2>
+            <p class="card-text">
+              We empower marginalized communities, especially Muslims, through advocacy, research, and access to welfare schemes, striving for socio-economic empowerment that leads to equity and justice.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
-<section class="statistics-section py-5 bg-light">
+<!-- Who We Are Section -->
+<section class="who-we-are-section py-5 bg-light">
   <div class="container">
-    <h2 class="text-center mb-5">Stark Developmental Disparities: Sachar Committee Highlights Muslim Backwardness in India</h2>
+    <h2 class="section-title text-center mb-5">Who We Are</h2>
+    <div class="row align-items-center">
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <img src="assets/images/about/team-photo.jpg" alt="ASEEM Team" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-lg-6">
+        <p>
+          ASEEM is a registered NGO based in Hyderabad, India comprising a group of activists, researchers, lawyers, and social workers who work for the rights and entitlements of the marginalized communities. We believe that every person deserves dignity, justice, and equality, regardless of their caste, class, gender, religion, or ethnicity.
+        </p>
+        <p>
+          We aim for socio-economic empowerment of minority communities by helping them to apply for welfare schemes and programmes, providing them with legal aid, training, and advocacy. We also conduct action research and documentation on the issues affecting the poor and marginalized sections of the society.
+        </p>
+        <p>
+          We use various strategies such as advocacy, conducting workshops, orientation programs, leadership development and filing public interest litigation (PIL) to enable the marginalized people to access their constitutional rights and entitlements. We are committed to creating a more inclusive and democratic society where everyone can live with human dignity.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Focus Areas Section -->
+<section class="focus-areas-section py-5">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">Our Focus Areas</h2>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4" *ngFor="let focus of focusAreas">
+        <div class="focus-card h-100">
+          <div class="focus-icon">
+            <i class="fa fa-{{focus.icon}}"></i>
+          </div>
+          <h3 class="focus-title">{{focus.title}}</h3>
+          <p class="focus-description">{{focus.description}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Our Approach Section -->
+<section class="approach-section py-5 bg-light">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">Our Approach</h2>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4" *ngFor="let approach of approaches">
+        <div class="approach-card h-100">
+          <div class="approach-icon">
+            <i class="fa fa-{{approach.icon}}"></i>
+          </div>
+          <h3 class="approach-title">{{approach.title}}</h3>
+          <p class="approach-description">{{approach.description}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Statistics Section -->
+<section class="statistics-section py-5">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">Stark Developmental Disparities</h2>
     <p class="text-center mb-4">
-      Muslim Community in India lags behind in all development indicators and in many aspects is more
-      backward than the dalits. The Sachar Committee has pointed this out very starkly. According to its
-      report:
+      The Sachar Committee Report highlighted that the Muslim Community in India lags behind in all development indicators and in many aspects is more backward than the Dalits:
     </p>
-    <div class="row text-center statistics">
-      <div class="col-md-4">
+    <div class="row text-center">
+      <div class="col-md-4 mb-4">
         <div class="stat-card">
-          <h3>17%</h3>
-          <p>children in the community complete matriculation</p>
+          <div class="stat-number">17%</div>
+          <div class="stat-label">Children in the community complete matriculation</div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 mb-4">
         <div class="stat-card">
-          <h3>8%</h3>
-          <p>Muslims in urban areas are employed in the organized sector</p>
+          <div class="stat-number">8%</div>
+          <div class="stat-label">Muslims in urban areas are employed in the organized sector</div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 mb-4">
         <div class="stat-card">
-          <h3>4.6%</h3>
-          <p>of the total loans given by banks go to the Muslim Community</p>
+          <div class="stat-number">4.6%</div>
+          <div class="stat-label">Of the total loans given by banks go to the Muslim Community</div>
         </div>
       </div>
     </div>
     <p class="text-center mt-4">
-      The most recent Sachar Commission Report published in 2016, further reiterates the backwardness of the community.
+      The most recent Sachar Commission Report published in 2016 further reiterates the backwardness of the community.
     </p>
   </div>
 </section>
 
-<section class="challenges-section py-5">
+<!-- Team Section -->
+<section class="team-section py-5 bg-light">
   <div class="container">
-    <h2 class="text-center mb-5">Challenges</h2>
+    <h2 class="section-title text-center mb-5">Our Team</h2>
     <div class="row g-4">
-      <div class="col-md-6">
-        <div class="challenge-card">
-          <div class="icon-container">
-            <i class="fas fa-ban fa-3x"></i>
+      <div class="col-md-6 col-lg-4" *ngFor="let member of teamMembers">
+        <div class="team-card h-100">
+          <div class="team-image">
+            <img [src]="member.image" [alt]="member.name" class="img-fluid">
           </div>
-          <h3>Restricted Access to Government Programs</h3>
-          <p>
-            Complex processes and procedures severely restrict the community's access to government programmes and
-            schemes. This results in severe under-utilization of budgets allocated for development of Minority
-            Communities.
-          </p>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="challenge-card">
-          <div class="icon-container">
-            <i class="fas fa-university fa-3x"></i>
+          <div class="team-info">
+            <h3 class="team-name">{{member.name}}</h3>
+            <p class="team-position">{{member.position}}</p>
+            <p class="team-bio">{{member.bio}}</p>
           </div>
-          <h3>Limited Banking Services for Muslim Entrepreneurs and Artisans</h3>
-          <p>
-            Most Muslim are either micro entrepreneurs or artisans. Their access to banking services is severely
-            restricted resulting in exploitation by unorganized money lenders from whom they borrow to meet their
-            working capital needs.
-          </p>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="challenge-card">
-          <div class="icon-container">
-            <i class="fas fa-hand-holding-heart fa-3x"></i>
-          </div>
-          <h3>Dependence on Charity Hindering Community Development</h3>
-          <p>
-            Being perennially dependent on doles and charity, the community's growth is stunted. Dependence on
-            charitable programs is a relationship. Therefore the real issues of the community do not find adequate
-            representation in the government and other policy formulation platforms.
-          </p>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="challenge-card">
-          <div class="icon-container">
-            <i class="fas fa-balance-scale fa-3x"></i>
-          </div>
-          <h3>Political and Systemic Discrimination Against Religious Minorities in India</h3>
-          <p>Political and systemic discrimination against religious minorities in India.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="what-we-do py-5 bg-secondary">
+<!-- Advisory Board Section -->
+<section class="advisory-section py-5">
   <div class="container">
-    <h2 class="text-center mb-5">What we do?</h2>
-    <div class="row align-items-center">
-      <div class="col-md-6">
-        <img src="16.jpeg" alt="ASEEM Workshop" class="img-fluid rounded">
-      </div>
-      <div class="col-md-6">
-        <p>
-          ASEEM works with volunteers engaged with grass-root organizations in the Muslim Community. These volunteers to be leaders/workers dedicated to trigger movements within the community towards accessing their constitutional rights to social and economic development. We realize that the impact of this kind of an intervention will be limited if it remains only a time-sustained and mere-governmental effort and visualize the community and make them productive citizens.
-        </p>
-        <a routerLink="#contact" class="btn btn-primary mt-3">Contact us</a>
+    <h2 class="section-title text-center mb-5">Advisory Board</h2>
+    <div class="row g-4">
+      <div class="col-md-6" *ngFor="let advisor of advisoryBoard">
+        <div class="advisor-card h-100">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <div class="advisor-image">
+                <img [src]="advisor.image" [alt]="advisor.name" class="img-fluid">
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="advisor-info">
+                <h3 class="advisor-name">{{advisor.name}}</h3>
+                <p class="advisor-position">{{advisor.position}}</p>
+                <p class="advisor-bio">{{advisor.bio}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- Get Involved Section -->
+<section class="get-involved-section py-5 bg-dark text-white">
+  <div class="container text-center">
+    <h2 class="section-title text-white mb-4">Get Involved With Us</h2>
+    <p class="mb-4">
+      We are looking for interns and volunteers who can assist us in various tasks. Please write to us with a brief introduction of yourself and your areas of interest.
+    </p>
+    <a href="mailto:aseemindia.org@gmail.com" class="btn btn-primary btn-lg">Contact Us</a>
   </div>
 </section>

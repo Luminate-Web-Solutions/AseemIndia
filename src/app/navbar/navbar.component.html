@@ -1,57 +1,54 @@
-<nav class="navbar">
-    <div class="navbar-container">
-        <div class="logo">
-            <img src="logo.png" alt="ASEEM India" routerLink="/">
+<nav class="navbar" [class.scrolled]="isScrolled">
+    <div class="container">
+      <div class="navbar-brand">
+        <a routerLink="/">
+          <img src="logo.png" alt="ASEEM Logo" class="logo">
+        </a>
+        <button class="mobile-toggle" (click)="toggleMobileMenu()">
+          <mat-icon>{{ isMobileMenuOpen ? 'close' : 'menu' }}</mat-icon>
+        </button>
+      </div>
+      
+      <div class="navbar-menu" [class.is-active]="isMobileMenuOpen">
+        <div class="navbar-end">
+          <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="navbar-item">
+            Home
+          </a>
+          
+          <div class="navbar-item has-dropdown">
+            <a class="navbar-link">About Us</a>
+            <div class="navbar-dropdown" @fadeInOut>
+              <a routerLink="/about" routerLinkActive="active" class="dropdown-item">Who We Are</a>
+              <a routerLink="/team" routerLinkActive="active" class="dropdown-item">Team</a>
+              <a routerLink="/advocacy" routerLinkActive="active" class="dropdown-item">Advocacy & Legal Interventions</a>
+              <a routerLink="/impact" routerLinkActive="active" class="dropdown-item">Our Impact</a>
+              <a routerLink="/get-involved" routerLinkActive="active" class="dropdown-item">Get Involved</a>
+              <a routerLink="/partners" routerLinkActive="active" class="dropdown-item">Partners</a>
+            </div>
+          </div>
+          
+          <div class="navbar-item has-dropdown">
+            <a class="navbar-link">Projects & Reports</a>
+            <div class="navbar-dropdown" @fadeInOut>
+              <a routerLink="/projects" routerLinkActive="active" class="dropdown-item">Projects</a>
+              <a routerLink="/reports" routerLinkActive="active" class="dropdown-item">Reports & Publications</a>
+              <a routerLink="/gallery" routerLinkActive="active" class="dropdown-item">Gallery</a>
+              <a routerLink="/case-studies" routerLinkActive="active" class="dropdown-item">Case Studies</a>
+            </div>
+          </div>
+          
+          <a routerLink="/news" routerLinkActive="active" class="navbar-item">
+            News Reports
+          </a>
+          
+          <div class="navbar-item has-dropdown">
+            <a class="navbar-link">Contact Us</a>
+            <div class="navbar-dropdown" @fadeInOut>
+              <a routerLink="/contact" routerLinkActive="active" class="dropdown-item">Contact Us</a>
+              <a routerLink="/donate" routerLinkActive="active" class="dropdown-item">Donate/Support</a>
+            </div>
+          </div>
         </div>
-        <ul class="nav-items">
-            <li class="nav-item">
-                <a routerLink="/" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-                <a routerLink="/about" class="nav-link">
-                    About Us
-                    <span class="dropdown-icon">▼</span>
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a routerLink="/team">Team</a></li>
-                    <li><a routerLink="/advocacy">Advocacy & Legal Interventions</a></li>
-                    <li><a routerLink="/impact">Our Impact</a></li>
-                    <li><a routerLink="/getinvolved">Get Involved</a></li>
-                    <li><a routerLink="/partners">Partners</a></li>
-                </ul>
-            </li>
-            <!-- <li class="nav-item">
-                <a routerLink="/blog" class="nav-link">Blog</a>
-            </li> -->
-            <li class="nav-item">
-                <a routerLink="/projects" class="nav-link">
-                    Projects & Reports
-                    <span class="dropdown-icon">▼</span>
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a routerLink="/projects">Projects</a></li>
-                    <li><a routerLink="/reports">Reports, Publications & Research</a></li>
-                    <li><a routerLink="/gallery">Gallery</a></li>
-                    <li><a routerLink="/casestudies">Case Studies</a></li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <a routerLink="contact" class="nav-link">
-                    Contact Us
-                    <span class="dropdown-icon">▼</span>
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a routerLink="/contact">Contact Us</a></li>
-                    <li><a routerLink="/donate">Donate/Support</a></li>
-                </ul>
-            </li>
-            <!-- WhatsApp Link in Navbar -->
-            <li class="nav-item whatsapp-nav">
-                <a href="https://wa.me/918897865025" target="_blank">
-                    <img src="whatsapp.png" alt="WhatsApp">
-                </a>
-            </li>
-        </ul>
+      </div>
     </div>
   </nav>
-  
